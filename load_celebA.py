@@ -5,7 +5,7 @@ import pickle
 import os
 import cv2
 import numpy as np
-from mtcnn.mtcnn import MTCNN
+#from mtcnn.mtcnn import MTCNN
 import re
 import argparse
 
@@ -33,10 +33,10 @@ def get_crop_img(bbox_path,img_path,attr_path): #crop the images from the boundi
                 img_name = os.path.join(img_path,img_list[i])
                 img = cv2.imread(img_name)
                 face_bbox = bbox_list[i+2]
-                x = face_bbox.split()[1]
-                y = face_bbox.split()[2]
-                width = face_bbox.split()[3]
-                height = face_bbox.split()[4]
+                x = int(face_bbox.split()[1])
+                y = int(face_bbox.split()[2])
+                width = int(face_bbox.split()[3])
+                height = int(face_bbox.split()[4])
                 img = img[y:y+height,x:x+width]
                 if img.size ==0:
                     continue
@@ -55,9 +55,9 @@ def get_crop_img(bbox_path,img_path,attr_path): #crop the images from the boundi
                 np.random.shuffle(X_gender)
                 np.random.shuffle(X_glasses)
             print('data size:%d'%len(X_smile))
-            train_data_smile, test_data_smile = X_smile[:160000], X_smile[160000:]
-            train_data_gender, test_data_gender = X_gender[:160000], X_gender[160000:]
-            train_data_glasses, test_data_glasses = X_glasses[:160000],X_glasses[160000:]
+            train_data_smile, test_data_smile = X_smile[:120000], X_smile[120000:]
+            train_data_gender, test_data_gender = X_gender[:120000], X_gender[120000:]
+            train_data_glasses, test_data_glasses = X_glasses[:120000],X_glasses[120000:]
             np.save('./data/' + 'train_smile.npy', train_data_smile)
             np.save('./data/' + 'data_smile.npy', X_smile)
             np.save('./data/' + 'test_smile.npy', test_data_smile)

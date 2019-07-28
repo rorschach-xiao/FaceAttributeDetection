@@ -12,8 +12,8 @@ EMOTION_SIZE = 48
 
 def getSmileImage():
     print('Load smile image...................')
-    X1 = np.load(DATA_FOLDER + 'train_smile.npy')
-    X2 = np.load(DATA_FOLDER + 'test_smile.npy')
+    X1 = np.load(DATA_FOLDER + 'train_smile.npy',allow_pickle=True)
+    X2 = np.load(DATA_FOLDER + 'test_smile.npy',allow_pickle=True)
 
     train_data = []
     test_data = []
@@ -30,8 +30,8 @@ def getSmileImage():
 
 def getGenderImage():
     print('Load gender image...................')
-    X1 = np.load(DATA_FOLDER + 'train_gender.npy')
-    X2 = np.load(DATA_FOLDER + 'test_gneder.npy')
+    X1 = np.load(DATA_FOLDER + 'train_gender.npy',allow_pickle=True)
+    X2 = np.load(DATA_FOLDER + 'test_gender.npy',allow_pickle=True)
 
     train_data = []
     test_data = []
@@ -47,8 +47,8 @@ def getGenderImage():
 
 def getGlassesImage():
     print('Load age image...................')
-    X1 = np.load(DATA_FOLDER + 'train_glasses.npy')
-    X2 = np.load(DATA_FOLDER + 'test_glasses.npy')
+    X1 = np.load(DATA_FOLDER + 'train_glasses.npy',allow_pickle=True)
+    X2 = np.load(DATA_FOLDER + 'test_glasses.npy',allow_pickle=True)
 
     train_data = []
     test_data = []
@@ -67,7 +67,7 @@ def random_crop(batch, crop_shape, padding=None):
     if padding:
         oshape = (oshape[0] + 2 * padding, oshape[1] + 2 * padding)
     new_batch = []
-    npad = ((padding, padding), (padding, padding), (0, 0))
+    npad = ((padding, padding), (padding, padding),(0,0))
     for i in range(len(batch)):
         new_batch.append(batch[i])
         if padding:
