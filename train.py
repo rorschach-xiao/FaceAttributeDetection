@@ -161,7 +161,7 @@ with tf.Session() as sess:
 
         smile_train_accuracy = smile_nb_true_pred * 1.0 / smile_nb_train
         gender_train_accuracy = gender_nb_true_pred * 1.0 / gender_nb_train
-        age_train_accuracy = glasses_nb_true_pred * 1.0 / glasses_nb_train
+        glasses_train_accuracy = glasses_nb_true_pred * 1.0 / glasses_nb_train
 
         avg_smile_loss = np.average(avg_smile_loss)
         avg_gender_loss = np.average(avg_gender_loss)
@@ -177,17 +177,17 @@ with tf.Session() as sess:
             # epochs, smile_train_accuracy, gender_train_accuracy, age_train_accuracy,
             # avg_smile_loss, avg_gender_loss, avg_age_loss, avg_ttl, avg_rgl
             f.write('{0},{1},{2},{3},{4},{5},{6},{7},{8}\n'.format(current_epoch, smile_train_accuracy, gender_train_accuracy,
-                                                                   age_train_accuracy, avg_smile_loss, avg_gender_loss,
+                                                                   glasses_train_accuracy, avg_smile_loss, avg_gender_loss,
                                                                    avg_glasses_loss, avg_ttl, avg_rgl))
 
         print('Smile task train accuracy: ' + str(smile_train_accuracy * 100))
         print('Gender task train accuracy: ' + str(gender_train_accuracy * 100))
-        print('Age task train accuracy: ' + str(age_train_accuracy * 100))
+        print('Glasses task train accuracy: ' + str(glasses_train_accuracy * 100))
 
         print('Total loss: ' + str(avg_ttl) + '. L2-loss: ' + str(avg_rgl))
         print('Smile loss: ' + str(avg_smile_loss))
         print('Gender loss: ' + str(avg_gender_loss))
-        print('Age loss: ' + str(avg_glasses_loss))
+        print('Glasses loss: ' + str(avg_glasses_loss))
 
         print('\n')
 

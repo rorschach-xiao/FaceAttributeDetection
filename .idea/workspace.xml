@@ -2,19 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f804dec7-5924-4262-9be0-fe17af9a4e9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CRL/.idea/CRL.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/eval.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/image/27.pfm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/image/left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/image/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/prepfm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRL/train.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumanAttributeEstimate/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumanAttributeEstimate/CNNhead_input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumanAttributeEstimate/const.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumanAttributeEstimate/load_celebA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumanAttributeEstimate/load_imdb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumanAttributeEstimate/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumanAttributeEstimate/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rectified_Pic/gc_matching.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rectified_Pic/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rectified_Pic/rectified.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rectified_Pic/sgm_matching.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../disp_postprocess/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../race_estimation/load_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../race_estimation/split_race.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HumanAttributeEstimate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HumanAttributeEstimate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_imdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net.py" beforeDir="false" afterPath="$PROJECT_DIR$/net.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bilinear_interpolation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bilinear_interpolation/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,62 +32,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FaceAttributeDetection$train.coverage" NAME="train Coverage Results" MODIFIED="1564342872111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1418740156">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="18" />
-          <entry key="py" value="522" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="540" />
-        </counts>
-      </usages-collector>
-    </session>
+    <SUITE FILE_PATH="coverage/FaceAttributeDetection$train.coverage" NAME="train Coverage Results" MODIFIED="1564475526849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/load_celebA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-252">
-              <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+            <state relative-caret-position="147">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="108" column="16" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
               <folding>
-                <element signature="e#44#57#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/load_imdb.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imdb-preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2247">
+            <state relative-caret-position="987">
               <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
               <folding>
                 <element signature="e#579#588#0" expanded="true" />
@@ -90,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="169" column="19" selection-start-line="169" selection-start-column="19" selection-end-line="169" selection-end-column="19" />
+            <state relative-caret-position="338">
+              <caret line="171" selection-start-line="171" selection-end-line="171" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -108,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="124" column="56" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
+            <state relative-caret-position="2678">
+              <caret line="189" column="22" selection-start-line="189" selection-start-column="22" selection-end-line="189" selection-end-column="22" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -123,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CNNhead_input.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="1092">
               <caret line="73" column="37" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -133,9 +115,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="71" column="3" selection-start-line="71" selection-start-column="3" selection-end-line="75" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prepare-data2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
+            <state relative-caret-position="2751">
               <caret line="137" column="20" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="20" />
               <folding>
                 <element signature="e#29#38#0" expanded="true" />
@@ -163,24 +157,21 @@
         <option value="$PROJECT_DIR$/prepare-data2.py" />
         <option value="$PROJECT_DIR$/imdb-preprocess.py" />
         <option value="$PROJECT_DIR$/const.py" />
-        <option value="$PROJECT_DIR$/net.py" />
         <option value="$PROJECT_DIR$/load_celebA.py" />
         <option value="$PROJECT_DIR$/CNNhead_input.py" />
         <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/net.py" />
+        <option value="$PROJECT_DIR$/evaluation.py" />
+        <option value="$PROJECT_DIR$/load_img.py" />
+        <option value="$PROJECT_DIR$/demo.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="974" />
-    <option name="y" value="1" />
-    <option name="width" value="950" />
-    <option name="height" value="1060" />
+    <option name="x" value="379" />
+    <option name="y" value="157" />
+    <option name="width" value="951" />
+    <option name="height" value="1062" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -188,6 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,7 +191,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,9 +219,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\python code\race_estimation\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -260,22 +251,23 @@
       <option name="presentableId" value="Default" />
       <updated>1564135899698</updated>
       <workItem from="1564135931541" duration="17870000" />
+      <workItem from="1564345823830" duration="61000" />
+      <workItem from="1564453867569" duration="14501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17870000" />
+    <option name="totallyTimeSpent" value="32432000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1519" height="977" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09003215" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.092402466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.12013348" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289941" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4538376" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,8 +276,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2102336" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.16573972" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20946746" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.16568047" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -318,9 +310,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -362,7 +351,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/imdb-preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2247">
+        <state relative-caret-position="987">
           <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
           <folding>
             <element signature="e#579#588#0" expanded="true" />
@@ -372,7 +361,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prepare-data2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
+        <state relative-caret-position="2751">
           <caret line="137" column="20" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="20" />
           <folding>
             <element signature="e#29#38#0" expanded="true" />
@@ -380,16 +369,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/load_imdb.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/load_celebA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
-          <folding>
-            <element signature="e#44#57#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="147">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -400,9 +383,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CNNhead_input.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="1092">
           <caret line="73" column="37" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -410,22 +403,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net.py">
+    <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="169" column="19" selection-start-line="169" selection-start-column="19" selection-end-line="169" selection-end-column="19" />
+        <state relative-caret-position="2678">
+          <caret line="189" column="22" selection-start-line="189" selection-start-column="22" selection-end-line="189" selection-end-column="22" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
+    <entry file="file://$PROJECT_DIR$/evaluation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="124" column="56" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
+        <state relative-caret-position="420">
+          <caret line="71" column="3" selection-start-line="71" selection-start-column="3" selection-end-line="75" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="108" column="16" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

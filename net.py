@@ -135,19 +135,19 @@ def selective_loss(y_smile_conv, y_gender_conv, y_glasses_conv, y_, mask):
 
     smile_mask = tf.cast(tf.equal(mask, vector_zero), tf.float32)
     gender_mask = tf.cast(tf.equal(mask, vector_one), tf.float32)
-    age_mask = tf.cast(tf.equal(mask, vector_two), tf.float32)
+    glasses_mask = tf.cast(tf.equal(mask, vector_two), tf.float32)
 
     tf.add_to_collection('smile_mask', smile_mask)
     tf.add_to_collection('gender_mask', gender_mask)
-    tf.add_to_collection('glasses_mask', age_mask)
+    tf.add_to_collection('glasses_mask', glasses_mask)
 
     y_smile = tf.slice(y_, [0, 0], [BATCH_SIZE, 2])
     y_gender = tf.slice(y_, [0, 0], [BATCH_SIZE, 2])
-    y_age = tf.slice(y_, [0, 0], [BATCH_SIZE, 2])
+    y_glasses = tf.slice(y_, [0, 0], [BATCH_SIZE, 2])
 
     tf.add_to_collection('y_smile', y_smile)
     tf.add_to_collection('y_gender', y_gender)
-    tf.add_to_collection('y_glasses', y_age)
+    tf.add_to_collection('y_glasses', y_glasses)
 
     smile_cross_entropy = tf.reduce_sum(
         tf.reduce_sum(-y_smile * tf.log(y_smile_conv), axis=1) * smile_mask) / tf.clip_by_value(
@@ -155,9 +155,9 @@ def selective_loss(y_smile_conv, y_gender_conv, y_glasses_conv, y_, mask):
     gender_cross_entropy = tf.reduce_sum(
         tf.reduce_sum(-y_gender * tf.log(y_gender_conv), axis=1) * gender_mask) / tf.clip_by_value(
         tf.reduce_sum(gender_mask), 1, 1e9)
-    age_cross_entropy = tf.reduce_sum(
-        tf.reduce_sum(-y_age * tf.log(y_glasses_conv), axis=1) * age_mask) / tf.clip_by_value(
-        tf.reduce_sum(age_mask), 1, 1e9)
+    glasses_cross_entropy = tf.reduce_sum(
+        tf.reduce_sum(-y_glasses * tf.log(y_glasses_conv), axis=1) * glasses_mask) / tf.clip_by_value(
+        tf.reduce_sum(glasses_mask), 1, 1e9)
 
     l2_loss = []
     for var in tf.trainable_variables():
@@ -165,9 +165,9 @@ def selective_loss(y_smile_conv, y_gender_conv, y_glasses_conv, y_, mask):
             l2_loss.append(tf.nn.l2_loss(var))
     l2_loss = WEIGHT_DECAY * tf.add_n(l2_loss)
 
-    total_loss = smile_cross_entropy + gender_cross_entropy + age_cross_entropy + l2_loss
+    total_loss = smile_cross_entropy + gender_cross_entropy + glasses_cross_entropy + l2_loss
 
-    return smile_cross_entropy, gender_cross_entropy, age_cross_entropy, l2_loss, total_loss
+    return smile_cross_entropy, gender_cross_entropy, glasses_cross_entropy, l2_loss, total_loss
 
 
 def train_op(loss, global_step):
